@@ -11,9 +11,7 @@ h1 {
 	margin: 5% 42% 7%;
 }
 .Link {
-	border-style: solid;
-	border-color: #0094ff;
-	border-radius: 5px;
+
 }
 .Left {
 	margin-left: 20%;
@@ -21,14 +19,28 @@ h1 {
 }
 .Mid {
 	margin-left: 50%;
+	margin-top: -5%;
 	width:40px;
 }
 .Right {
 	margin-left: 80%;
-	margin-top: -5%;
+	margin-top: -3%;
 	width:67px;
 }
-p {
-	color: red;
-	text-decoration: none;
+.Link {
+  	overflow: hidden;
+  	border-style: solid;
+	border-color: #0094ff;
+	border-radius: 5px;
+}
+
+.Link a {
+  	display: block;
+  	text-align: center;
+  	text-decoration: none;
+}
+
+.Link a:hover {
+  	background: #ddd;
+  	color: black;
 }
