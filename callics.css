@@ -1,0 +1,34 @@
+body {
+	width: 100%;
+	height: 100%;
+	background-image: url("images/gidonmeesterwerk.png")
+}
+
+h1 {
+	color: purple;
+}
+.MainTitle {
+	margin: 5% 42% 7%;
+}
+.Link {
+	border-style: solid;
+	border-color: #0094ff;
+	border-radius: 5px;
+}
+.Left {
+	margin-left: 20%;
+	width:110px;
+}
+.Mid {
+	margin-left: 50%;
+	width:40px;
+}
+.Right {
+	margin-left: 80%;
+	margin-top: -5%;
+	width:67px;
+}
+p {
+	color: red;
+	text-decoration: none;
+}
