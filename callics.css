@@ -10,9 +10,7 @@ h1 {
 .MainTitle {
 	margin: 5% 42% 7%;
 }
-.Link {
 
-}
 .Left {
 	margin-left: 20%;
 	width:110px;
@@ -41,6 +39,31 @@ h1 {
 }
 
 .Link a:hover {
-  	background: #ddd;
+  	background: #7F97CD;
   	color: black;
+}
+
+.scrol {
+	margin-left: 41%;
+	width: 400px;
+	height: 175px;
+	border-style: solid;
+	border-color: black;
+	background-image: url("images/AlastorDelete.png");
+}
+.Galery {
+	width: 100%;
+	height: 100%;	
+	display:none;
+}
+
+.Rarrow {
+	margin-top: : 50%;
+	margin-left: 19.4%;
+	position: absolute;
+}
+
+.Larrow {
+	margin-top: : 50%;
+	position: absolute;
 }

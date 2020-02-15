@@ -3,11 +3,39 @@
 <head>
 	<title>home</title>
 	<link rel="stylesheet" type="text/css" href="callics.css">
+	<script type="text/javascript">
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+  		showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+  		var i;
+  		var x = document.getElementsByClassName("Galery");
+  		if (n > x.length) {slideIndex = 1}
+  		if (n < 1) {slideIndex = x.length} ;
+  		for (i = 0; i < x.length; i++) {
+   		 x[i].style.display = "none";
+  	}
+  	x[slideIndex-1].style.display = "block";
+	}
+	</script>
 </head>
 <body>
 	<h1 class="MainTitle">callics homepage</h1>
 	<div class="Link Mid"><a href=""><p>Home</p></a></div>
 	<div class="Link Left"><a href=""><p>Informatiepagina</p></a></div>
 	<div class="Link Right"><a href=""><p>referentie pagina</p></a></div>
+
+	<div class="scrol">
+		<button class="Larrow" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="Rarrow" onclick="plusDivs(+1)">&#10095;</button>
+		<img class="Galery" src="images/AlastorDelete.png">
+		<img class="Galery" src="images/raw.png">
+		<img class="Galery" src="images/angle.png">
+	</div>
+
 </body>
 </html>
