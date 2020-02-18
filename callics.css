@@ -49,12 +49,12 @@ h1 {
 	height: 175px;
 	border-style: solid;
 	border-color: black;
-	background-image: url("images/AlastorDelete.png");
 }
+
+
 .Galery {
 	width: 100%;
-	height: 100%;	
-	display:none;
+	height: 100%;
 }
 
 .Rarrow {
@@ -66,4 +66,30 @@ h1 {
 .Larrow {
 	margin-top: : 50%;
 	position: absolute;
+}
+
+.textBlad {
+	margin-left: 20%;
+	margin-top: 10%;
+	width: 20%;
+	float: left;
+}
+
+.text {
+	color: #92D1FF;
+}
+
+.contact {
+	margin-right: 10%;	
+	margin-top: 10%;
+	width: 20%;
+	float: right;
+}
+
+input {
+	width: 280px;
+}
+
+.bericht {
+	height: 150px;
 }

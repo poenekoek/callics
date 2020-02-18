@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home</title>
+	<link rel="stylesheet" type="text/css" href="callics.css">
+	<script type="text/javascript">
+
+	</script>
+</head>
+<body>
+	<h1 class="MainTitle">callics homepage</h1>
+	<div class="Link Mid"><a href="home.html"><p>Home</p></a></div>
+	<div class="Link Left"><a href="Informatiereferentiepagina.html"><p>Informatie<br>&<br>referentie</p></a></div>
+	<div class="Link Right"><a href="contact.html"><p>contact</p></a></div>
+
+	<div class="scrol">
+  <img class="Galery" src="images/AlastorDelete.png">
+  <img class="Galery" src="images/angle.png">
+  <img class="Galery" src="images/raw.png">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("Galery");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000);
+}
+</script>
+
+
+</body>
+</html>
