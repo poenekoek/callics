@@ -4,30 +4,38 @@
 	<title>Informatiepagina</title>
 	<link rel="stylesheet" type="text/css" href="callics.css">
 	<script type="text/javascript">
+		function brons() {
 		var packBrons	= prompt("Voor hoeveel maanden wil je het brons paket");
+		}
+		function silver() {
 		var packSilver	= prompt("Voor hoeveel maanden wil je het silver paket");
+		}
+		function gold() {
 		var packGold	= prompt("Voor hoeveel maanden wil je goud paket");
+		}
+		function yellow() {
+		var packYellow	= prompt("Voor hoeveel maanden wil je het geele paket");
+		}
+		function orange() {
+		var packOrange	= prompt("Voor hoeveel maanden wil je het oranje paket");
+		}
+		function green() {
+		var packGreen	= prompt("Voor hoeveel maanden wil je groene paket");
+		}
 
 		var packBronsCalc =		packBrons * 5.95;
 		var packSilverCalc =	packSilver * 7.95;
-		var packGoldCalc =		packGold * 10.95;	{
+		var packGoldCalc =		packGold * 10.95;
+		var packYellowCalc =	packYellow * 5.95;
+		var packOrangeCalc =	packOrange * 7.95;
+		var packGreenCalc =		packGreen * 10.95;
+
 			console.log("De prijs voor " + packBrons + " maand(en) is " + packBronsCalc + " euro.");
 			console.log("De prijs voor " + packSilver + " maand(en) is " + packSilverCalc + " euro.");
 			console.log("De prijs voor " + packGold + " maand(en) is " + packGoldCalc + " euro.");			
-		}
-
-
-		var packYellow	= prompt("Voor hoeveel maanden wil je het geele paket");
-		var packOrange	= prompt("Voor hoeveel maanden wil je het oranje paket");
-		var packGreen	= prompt("Voor hoeveel maanden wil je groene paket");
-
-		var packYellowCalc =	packYellow * 5.95;
-		var packOrangeCalc =	packOrange * 7.95;
-		var packGreenCalc =		packGreen * 10.95;	{
 			console.log("De prijs voor " + packYellow + " maand(en) is " + packYellowCalc + " euro.");
 			console.log("De prijs voor " + packOrange + " maand(en) is " + packOrangeCalc + " euro.");
-			console.log("De prijs voor " + packGreen + " maand(en) is " + packGreenCalc + " euro.");			
-		}
+			console.log("De prijs voor " + packGreen + " maand(en) is " + packGreenCalc + " euro.");
 	</script>
 </head>
 <body>
@@ -52,6 +60,13 @@
 			-	Pakket Oranje: 100GB opslag (6 euro per maand)<br>
 			-	Pakket Groen: 1TB opslag (10 euro per maand)<br>
 		</p>
+
+		<button onclick="brons()">Brons berkeken</button>
+		<button onclick="silver()">Silver bereken</button>
+		<button onclick="gold()">Goud bereken</button>
+		<button onclick="yellow()">Geel bereken</button>
+		<button onclick="orange()">oranje bereken</button>
+		<button onclick="green()">Groen bereken</button>
 </div>
 	<script>
 var myIndex = 0;
