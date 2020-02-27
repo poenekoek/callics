@@ -24,7 +24,7 @@
 	</div>
 
 	<div class="contact">
-		<form method="GET" action="action_page.php">
+		<form method="GET" action="">
 		
 		<LABEL>mijn naam</LABEL><br>
 		<input type="text" name="naam" required  />
@@ -35,7 +35,7 @@
 		<br><br>
 
 		<LABEL>E-mail</LABEL><br>
-		<input type="email" name="mail" required />
+		<input type="email" id="mail" name="mail" required />
 		<br><br>
 
 		<LABEL>bericht</LABEL><br>
@@ -50,8 +50,11 @@
             	if (Num < 10) {
             		alert("this is not a valid dutch phone number");
             	}
-            	if (Num > 10) {
+            	else if (Num > 10) {
             		alert("this is not a valid dutch phone number");
+            	}
+            	else {
+            		alert("het is verstuurt!")
             	}
         	}
 		</script>
