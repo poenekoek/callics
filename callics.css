@@ -6,13 +6,16 @@ body {
 
 h1 {
 	color: purple;
+
 }
 .MainTitle {
 	margin: 5% 42% 7%;
+    font-size: 40px;
+    font-style: Arial Nova;
 }
 
 .Left {
-	margin-left: 20%;
+	margin-left: 25%;
 	width:110px;
 }
 .Mid {
@@ -21,7 +24,7 @@ h1 {
 	width:40px;
 }
 .Right {
-	margin-left: 80%;
+	margin-left: 75%;
 	margin-top: -3%;
 	width:67px;
 }
@@ -48,7 +51,7 @@ h1 {
 }
 
 .scrol {
-	margin-left: 35%;
+	margin-left: 38%;
 	width: 400px;
 	height: 175px;
 	border-style: solid;
@@ -80,7 +83,7 @@ h1 {
 }
 
 .text {
-	color: #92D1FF;
+	color: #000000;
 }
 
 .contact {
