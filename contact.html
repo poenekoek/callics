@@ -30,17 +30,24 @@
 		<input type="text" name="naam" required  />
 		<br><br>
 
-		<LABEL>Telefoon<small>10 cijfers</small></LABEL><br>
-		<input type="number" name="Telefoon" required pattern="[0-9]"/>
+		<LABEL>Telefoon<small> 10 cijfers</small></LABEL><br>
+		<input id="number" type="text" name="Telefoon" required pattern="[0-9]"/>
 		<br><br>
 
 		<LABEL>E-mail</LABEL><br>
 		<input type="email" name="mail" required />
 		<br><br>
 
-
-		<input type="submit" name="zenden" value="verstuur" />
-
+    	<button type="button" onclick="check();">send</button>
+    
+    	<script>
+        	function check(){
+            	var Num = document.getElementById("number").value.length;
+            	if (Num < 10) {
+            		alert("this is not a valid dutch phone number");
+            	}            	
+        	}
+		</script>
 	</form>
 	</div>
 
