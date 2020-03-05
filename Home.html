@@ -12,6 +12,30 @@
 	<div class="Link Mid"><a href="home.html"><p>Home</p></a></div>
 	<div class="Link Left"><a href="Informatiereferentiepagina.html"><p>Informatie<br>&<br>referentie</p></a></div>
 	<div class="Link Right"><a href="contact.html"><p>contact</p></a></div>
+
+	<div class="scrol">
+		<img class="Galery" src="images/dataopslag.png">
+  		<img class="Galery" src="images/cloud.png">
+		<img class="Galery" src="images/herenstraat.png">
+  
+	</div>
+
+		<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("Galery");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3500);
+}
+</script>
 	<footer>Made by Jasper & Gidon & Max</footer>
 </body>
 </html>
